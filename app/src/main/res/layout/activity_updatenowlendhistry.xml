@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/listback"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_doctor_list_top"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/steelblue"
+        android:layout_height="35dp">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/img_updatenowlendhistry_back"
+            android:src="@drawable/back01"/>
+        <TextView
+            android:text="当前借阅情况"
+            android:textSize="20sp"
+            android:id="@+id/tv_updatenowlendhistry_listtop"
+            android:textColor="#ffffff"
+            android:layout_gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/et_updatenowlendhistry_info"
+        android:hint="请输入信息"
+        android:maxLength="20"
+        android:textSize="18sp"
+        android:background="@drawable/editsharp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <TextView
+        android:background="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="3dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#ddd"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <TextView
+            android:id="@+id/tv_updatenowlendhistry_id"
+            android:textSize="20sp"
+            android:text="  按账号查找  "
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:background="@color/gray"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv_updatenowlendhistry_name"
+            android:textSize="20sp"
+            android:text="  按姓名查找  "
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="30dp" />
+    </LinearLayout>
+    <TextView
+        android:background="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="3dp" />
+    <TextView
+        android:id="@+id/tv_updatenowlendhistry_hint"
+        android:layout_marginTop="0dp"
+        android:text="请选择以下想要修改的借阅项"
+        android:textColor="@color/gray"
+        android:textSize="14sp"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_height="17dp" />
+    <ListView
+        android:dividerHeight="3dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lv_updatenowlendhistry_list"/>
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/lendread_back01"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_share_top"
+        android:background="@drawable/listback02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="12dp"
+            android:background="#f1ebeb"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <LinearLayout
+            android:id="@+id/ll_share_share"
+            android:orientation="horizontal"
+            android:background="@drawable/selectorchange"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/share001"
+                android:background="#5888e7"
+                android:layout_width="22dp"
+                android:layout_height="22dp" />
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text=" 动态分享 "
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="12dp"
+            android:id="@+id/ll_share_notice"
+            android:orientation="horizontal"
+            android:background="@drawable/selectorchange"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/notic"
+                android:background="#5888e7"
+                android:layout_width="22dp"
+                android:layout_height="22dp" />
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text=" 发布公告 "
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_share_noticeboard"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="18dp"
+            android:text="公告栏："
+            android:textColor="@color/gray"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp" />
+        <TextView
+            android:id="@+id/tv_share_notice"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="18dp"
+            android:text=""
+            android:textColor="@color/gray"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="2dp"
+        android:background="#f1ebeb"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <ListView
+        android:dividerHeight="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lv_share_list"/>
+
+</LinearLayout>

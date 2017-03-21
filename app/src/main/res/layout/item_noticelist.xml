@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_marginLeft="4dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="标题"
+                android:textColor="#4d4c4c"
+                android:id="@+id/tv_item_noticelist_title"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"/>
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_marginLeft="3dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:minHeight="13dp"
+            android:layout_height="14dp"
+            android:text="发布时间:2016-01-01 10:10:10"
+            android:id="@+id/tv_item_noticelist_time"
+            android:textSize="12sp"
+            android:singleLine="true"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minHeight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="内容"
+                android:layout_marginLeft="3dp"
+                android:gravity="center_vertical"
+                android:minLines="3"
+                android:maxLength="151"
+                android:id="@+id/tv_item_noticelist_content"
+                android:textSize="14sp"
+                android:singleLine="false"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

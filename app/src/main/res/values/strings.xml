@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">图书借阅管理</string>
+
+    <string name="tab_homepage">首页</string>
+    <string name="tab_share">动态</string>
+    <string name="tab_me">我</string>
+    <drawable name="clr_normal">#fcfbfb</drawable>
+    <drawable name="clr_pressed">#c2c0bd</drawable>
+
+</resources>

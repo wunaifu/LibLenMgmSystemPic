@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <!--  <TextView
+        android:id="@+id/text_weiyi"
+        android:text="图书借阅管理系统"
+        android:gravity="center"
+        android:background="@color/steelblue"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:textColor="#fafbfc" />
+-->
+    <ImageView
+        android:id="@+id/image_item1"
+        android:layout_width="match_parent"
+        android:src="@drawable/homepageimage"
+        android:layout_height="178dp"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/text_weiyi"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:background="#eaeaea"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/image_item1">
+
+        <LinearLayout
+            android:layout_marginTop="7dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/image_homepage_allbook"
+                    android:src="@drawable/book"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:layout_width="78dp"
+                    android:layout_height="78dp" />
+                <TextView
+                    android:text="检索图书信息"
+                    android:textSize="11dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/image_homepage_updatebook"
+                    android:src="@drawable/rappointment"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:layout_width="78dp"
+                    android:layout_height="78dp" />
+                <TextView
+                    android:id="@+id/tv_homepage_updatebook"
+                    android:text="查看个人信息"
+                    android:textSize="11dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/image_homepage_lendhistry"
+                    android:src="@drawable/myhistry"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:layout_width="78dp"
+                    android:layout_height="78dp" />
+                <TextView
+                    android:id="@+id/tv_homep_history"
+                    android:text="我的借阅历史"
+                    android:textSize="11dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/iv_homepage_nowlend"
+                    android:src="@drawable/rmyask1"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:layout_width="78dp"
+                    android:layout_height="78dp" />
+                <TextView
+                    android:id="@+id/tv_homep_nowlend"
+                    android:text="当前借阅情况"
+                    android:textSize="11dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

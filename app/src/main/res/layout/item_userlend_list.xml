@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/tv_item_userlend_num"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="2dp"
+        android:text="1000"
+        android:textColor="@color/red"
+        android:layout_width="78dp"
+        android:layout_height="80dp"
+        android:background="@drawable/user_icon"/>
+
+    <LinearLayout
+        android:layout_marginLeft="4dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="107dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="鲁智深"
+                android:textColor="@color/steelblue"
+                android:id="@+id/tv_item_userlend_username"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="25dp">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="所借书籍：数据库系统概论"
+                android:id="@+id/tv_item_userlend_bookname"
+                android:textSize="14sp"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="25dp">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content"
+                android:text="借出日期：2016-10-12"
+                android:id="@+id/tv_item_userlend_lendtime"
+                android:textSize="12sp"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_marginRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="借阅天数：35"
+                android:id="@+id/tv_item_userlend_days"
+                android:textSize="12sp"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="25dp">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="归还日期：2016-10-12"
+                android:singleLine="true"
+                android:maxLength="18"
+                android:layout_marginRight="5dp"
+                android:id="@+id/tv_item_userlend_returntime"
+                android:textSize="12sp"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_marginRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="借阅本数：1"
+                android:id="@+id/tv_item_userlend_bookamcount"
+                android:textSize="12sp"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

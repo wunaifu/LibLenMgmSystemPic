@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#eaeaea"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@color/steelblue"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <ImageView
+            android:id="@+id/image_updatebook_back"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dp"
+            android:src="@drawable/back01"
+            android:layout_width="60dp"
+            android:layout_height="28dp" />
+        <TextView
+            android:text="更新图书信息"
+            android:textSize="20dp"
+            android:textColor="#fffff1"
+            android:layout_gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="#e7ebef"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/image_updateboook_add"
+                    android:src="@drawable/addbook"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:layout_width="78dp"
+                    android:layout_height="78dp" />
+                <TextView
+                    android:text="添加图书信息"
+                    android:textSize="11dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/image_updateboook_update"
+                    android:src="@drawable/updabook"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:layout_width="78dp"
+                    android:layout_height="78dp" />
+                <TextView
+                    android:id="@+id/tv_homepage_updatebook"
+                    android:text="修改图书信息"
+                    android:textSize="11dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/image_updateboook_delete"
+                    android:src="@drawable/delbook"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:layout_width="78dp"
+                    android:layout_height="78dp" />
+                <TextView
+                    android:id="@+id/tv_homep_appointmine"
+                    android:text="删除图书信息"
+                    android:textSize="11dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/image_updateboook_find"
+                    android:src="@drawable/updatebook"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:layout_width="78dp"
+                    android:layout_height="78dp" />
+                <TextView
+                    android:id="@+id/tv_homep_history"
+                    android:text="查看图书信息"
+                    android:textSize="11dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

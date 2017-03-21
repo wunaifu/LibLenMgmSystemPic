@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shareInterpolator="false">
+	<!-- 浠庡彸寰�宸﹀钩绉诲叆灞忓箷 -->
+ 	<translate
+        android:fromXDelta="0"
+        
+        android:toXDelta="-100%p"
+
+        android:duration="500"
+         />
+	<!-- 浠庡崐閫忔槑鍒颁笉閫忔槑 -->
+ 	<alpha 
+ 	    
+ 	    android:fromAlpha="0.5"
+ 	    
+ 	    android:toAlpha="1.0"
+ 	    
+ 	    android:duration="500"
+ 	    
+ 	    />
+
+</set>

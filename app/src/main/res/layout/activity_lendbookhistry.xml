@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/listback"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_doctor_list_top"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/steelblue"
+        android:layout_height="35dp">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/img_lendbookhistry_back"
+            android:src="@drawable/back01"/>
+        <TextView
+            android:text="我的借阅历史"
+            android:textSize="20sp"
+            android:id="@+id/tv_lendbooklist_list"
+            android:textColor="#ffffff"
+            android:layout_gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <ListView
+        android:dividerHeight="3dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lv_lendbookhistry_list"/>
+
+</LinearLayout>

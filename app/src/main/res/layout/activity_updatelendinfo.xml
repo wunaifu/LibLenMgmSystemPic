@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eaeaea">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@color/steelblue"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+            <ImageView
+                android:id="@+id/iv_updatelendinfo_back"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/back01"
+                android:layout_width="60dp"
+                android:layout_height="25dp" />
+            <TextView
+                android:text="修改借阅信息"
+                android:textSize="20sp"
+                android:textColor="#fffff1"
+                android:layout_gravity="center_vertical"
+                android:layout_centerHorizontal="true"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_updatelendinfo_update"
+                android:text="保存"
+                android:textSize="19sp"
+                android:textColor="#fffff1"
+                android:layout_gravity="center_vertical"
+                android:layout_width="62dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            android:background="#fcfbfb"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <TextView
+                android:layout_marginLeft="9dp"
+                android:id="@+id/tv_updatelendinfo_username"
+                android:text="姓名：鲁智深"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/user_icon"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            android:background="#fcfbfb"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:text="书籍名：数据库系统概论"
+                android:id="@+id/tv_updatelendinfo_bookname"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="9dp"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal"
+            android:background="#fcfbfb"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:text="借出时间：2016-01-01"
+                android:id="@+id/tv_updatelendinfo_lendtime"
+                android:layout_weight="1"
+                android:layout_marginLeft="9dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal"
+            android:background="#fcfbfb"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:text="已借天数：1"
+                android:id="@+id/tv_updatelendinfo_days"
+                android:layout_weight="1"
+                android:layout_marginLeft="9dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="借阅本数：1"
+                android:id="@+id/tv_updatelendinfo_bookamount"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_marginRight="50dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="4dp"
+            android:orientation="vertical"
+            android:background="#fcfbfb"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <TextView
+                android:text="是否修改该借阅情况为归还："
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_marginLeft="9dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp" />
+            <RadioGroup
+                android:layout_marginLeft="40dp"
+                android:id="@+id/rg_updatelendinfo_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:text="是"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:textColor="@color/gray"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:text="否"
+                    android:textSize="16sp"
+                    android:textColor="@color/gray"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            android:background="#fcfbfb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="如果选择归还，则当前归还时间为:"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:layout_marginLeft="9dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp" />
+            <TextView
+                android:id="@+id/tv_updatelendinfo_returntime"
+                android:text="2016-01-01"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp" />
+
+
+        </LinearLayout>
+        <DatePicker
+            android:id="@+id/dp_updatelendinfo_datepicker"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:calendarViewShown="false"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp">
+        </DatePicker>
+
+    </LinearLayout>
+
+</ScrollView>

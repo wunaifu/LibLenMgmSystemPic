@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:minHeight="122dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <ImageView
+            android:layout_marginLeft="2dp"
+            android:src="@drawable/user_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:layout_marginLeft="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="姓名"
+                android:textColor="@color/steelblue"
+                android:id="@+id/tv_item_sharelist_username"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_marginLeft="3dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:minHeight="13dp"
+                android:layout_height="14dp"
+                android:text="2016-01-01 10:10:10"
+                android:id="@+id/tv_item_sharelist_time"
+                android:textSize="11sp"
+                android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:text="内容"
+        android:layout_marginLeft="7dp"
+        android:gravity="center_vertical"
+        android:minLines="3"
+        android:maxLength="151"
+        android:id="@+id/tv_item_sharelist_content"
+        android:textSize="14sp"
+        android:singleLine="false"
+        android:layout_gravity="center_vertical"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="25dp">
+        <ImageView
+            android:id="@+id/iv_item_sharelist_likeimage"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="18dp"
+            android:src="@drawable/like02"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+        <TextView
+            android:layout_marginLeft="3dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:id="@+id/tv_item_sharelist_likes"
+            android:textSize="11sp"
+            android:singleLine="true"/>
+    </LinearLayout>
+
+
+</LinearLayout>
